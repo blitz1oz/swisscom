@@ -1,14 +1,17 @@
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
 }
+.logo img{
+	width: 125px;
+	height: auto;
+}
 body{
 	font-family: 'Paytone One', sans-serif;
-	background: rgb(242, 242, 242);
+	background: #ebf5fc;
 }
 .navbar{
 	display: flex;
@@ -202,12 +205,14 @@ h2{
 	margin: auto;
 	padding-left: 25px;
 	padding-right: 25px;
+	background: #ebf5fc;
 }
 .small-container{
 	max-width: 1080px;
 	margin: auto;
 	padding-left: 25px;
 	padding-right: 25px;
+	background: #ebf5fc;
 }
 .col-4{
 	flex-basis: 25%;
@@ -302,10 +307,10 @@ small{
 /*-------- testimonial --------*/
 
 .testimonial{
-	padding-top: 10px;
+	padding-top: 250px;
 }
 .testimonial .col-3{
-	background: #fff;
+	background: #ebf5fc;
 	text-align: center;
 	padding: 40px 20px;
 	box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
@@ -362,7 +367,7 @@ small{
 
 /*-------- footer --------*/
 .footer{
-	background-image: linear-gradient(rgb(242, 242, 242),rgb(0, 140, 255));
+	background-image: linear-gradient(#ebf5fc,rgb(0, 140, 255));
 	color: #8a8a8a;
 	font-size: 14px;
 	padding: 60px 0 20px;
@@ -662,4 +667,133 @@ section .wave.wave2{
     100%{
         background-position-x: -1000px;
     }
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ebf5fc;
+}
+.container6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    padding: 100px 0 50px;
+}
+.container6 .card{
+    position: relative;
+    min-width: 320px;
+    height: 500px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3),
+    -5px -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 30px;
+}
+.container6 .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s, box-shadow 0.4s;
+    background: #ebf5fc;
+}
+.container6 .card:hover .box{
+    transform: scale(1.05)
+
+}
+.container6 .card .box .content{
+    padding: 20px;
+    text-align: center;
+}
+.container6 .card .box .content .icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #0086e6;
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 10px 10px 10px;
+	box-shadow: 0px 15px 25px rgba(92, 92, 92, 0.5);
+}
+.container6 .card .box .content .icon2{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-image: linear-gradient(180deg, #f9a747, #f8951e) ;
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 10px 10px 10px;
+	box-shadow: 0px 15px 25px rgba(94, 94, 94, 0.5);
+}
+.container6 .card .box .content .icon .fa{
+    color: #fff;
+    font-size: 2em;
+}
+.container6 .card .box .content .icon2 .fa{
+    color: #fff;
+    font-size: 2em;
+}
+.container6 .card .box .content h3{
+    color: rgb(0, 0, 0);
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.container6 .card .box .content h4{
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+    font-weight: 700;
+}
+.container6 .card .box .content h4 sup{
+    font-size: 0.75em;
+    font-weight: 400;
+}
+.container6 .card .box .content ul{
+    position: relative;
+}
+.container6 .card .box .content ul li{
+    list-style: none;
+    color: rgb(0, 0, 0);
+    margin: 5px 0;
+}
+.container6 .card .box .content ul li .fa-check{
+    color: #0f0;
+}
+.container6 .card .box .content ul li .fa-times{
+    color: #f00;
+}
+.container6 .card .box .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgb(0, 174, 255);
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+	 box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
 }
